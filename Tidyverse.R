@@ -9,3 +9,7 @@ gapminder_1952 <- gapminder %>%
 ggplot(gapminder_1952, aes(x = pop, y = lifeExp)) +
   geom_point()+
   scale_x_continuous(trans=scales::log10_trans())
+
+ggplot(gapminder_1952, aes(x = pop, y = lifeExp)) +
+  geom_point()+
+  scale_x_log10()
